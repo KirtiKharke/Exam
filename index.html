@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="top">
+            <div id="topleft">
+                <img src="https://images.unsplash.com/photo-1454692173233-f4f34c12adad?ixlib=rb-1.2.1&auto=format&fit=crop&w=590&q=80"
+                    alt="">
+                <div id="dot">
+                    <div id="ldot"></div>
+                    <div id="rdot"></div>
+                </div>
+                <div id="text">
+                    <h2>A Simple Guide to Design Thinking</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo maxime a dolore! Culpa, eius,
+                        debitis facere quibusdam minus officia dolorem distinctio totam a perferendis impedit accusamus
+                        numquam veritatis veniam, cupiditate vel obcaecati laboriosam corporis voluptatum hic.</p>
+                </div>
+                <div class="last">
+                    <div id="lastleft"> John Doe - Product Owner</div>
+                    <div id="lastright">Nov 25, 2020</div>
+                </div>
+            </div>
+
+
+
+            <div id="topright">
+                <img src="https://images.unsplash.com/photo-1555109307-f7d9da25c244?ixlib=rb-1.2.1&auto=format&fit=crop&w=590&q=80"
+                    alt="">
+                <div id="dot">
+                    <div id="ldot"></div>
+                    <div id="rdot"></div>
+                </div>
+                <div id="text">
+                    <h2>Web Design Trends for 2020</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo maxime a dolore! Culpa, eius,
+                        debitis facere quibusdam minus officia dolorem distinctio totam a perferendis impedit accusamus
+                        numquam veritatis veniam, cupiditate vel obcaecati laboriosam corporis voluptatum hic.</p>
+                </div>
+                <div class="last">
+                    <div id="lastleft"> Jane Doe - Author</div>
+                    <div id="lastright">Nov 25, 2020</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="bottom">
+            <div id="bottomleft">
+                <img src="https://images.unsplash.com/photo-1551009265-5425e848499e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=590&q=80"
+                    alt="">
+                <div id="dot">
+                    <div id="ldot"></div>
+                    <div id="rdot"></div>
+                </div>
+                <div id="text">
+                    <h2>A Simple Guide to Design Thinking</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo maxime a dolore! Culpa, eius,
+                        debitis facere quibusdam minus officia dolorem distinctio totam a perferendis impedit accusamus
+                        numquam veritatis veniam, cupiditate vel obcaecati laboriosam corporis voluptatum hic.</p>
+                </div>
+                <div class="last">
+                    <div id="lastleft"> Helen Hunter - Lead Developer</div>
+                    <div id="lastright">Nov 25, 2020</div>
+                </div>
+            </div>
+
+
+
+
+            <div id="bottomright">
+                <img src="https://images.unsplash.com/photo-1522083165195-3424ed129620?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=590&q=80"
+                    alt="">
+                <div id="dot">
+                    <div id="ldot"></div>
+                    <div id="rdot"></div>
+                </div>
+                <div id="text">
+                    <h2>Venics Stay & Thoughts</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo maxime a dolore! Culpa, eius,
+                        debitis facere quibusdam minus officia dolorem distinctio totam a perferendis impedit accusamus
+                        numquam veritatis veniam, cupiditate vel obcaecati laboriosam corporis voluptatum hic.</p>
+                </div>
+                <div class="last">
+                    <div id="lastleft"> Michael Jordan - Product Owner</div>
+                    <div id="lastright">Nov 25, 2020</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    <script>
+
+        const image = document.querySelector('#topleft img');
+
+        const modal = document.createElement('div');
+        modal.classList.add('modal');
+        document.body.appendChild(modal);
+
+        const modalImg = new Image();
+        modal.appendChild(modalImg);
+
+        image.addEventListener('click', function () {
+            modalImg.src = this.src;
+            modal.style.display = 'block';
+        });
+
+        modal.addEventListener('click', function (event) {
+            if (event.target === this) {
+                modal.style.display = 'none';
+            }
+        });
+
+
+
+        const image2 = document.querySelector('#topright img');
+
+        const modal2 = document.createElement('div');
+        modal2.classList.add('modal');
+        document.body.appendChild(modal2);
+
+        const modalImg2 = new Image();
+        modal2.appendChild(modalImg2);
+
+        image2.addEventListener('click', function () {
+            modalImg2.src = this.src;
+            modal2.style.display = 'block';
+        });
+
+        modal2.addEventListener('click', function (event) {
+            if (event.target === this) {
+                modal2.style.display = 'none';
+            }
+        });
+
+
+
+        const image3 = document.querySelector('#bottomleft img');
+
+        const modal3 = document.createElement('div');
+        modal3.classList.add('modal');
+        document.body.appendChild(modal3);
+
+        const modalImg3 = new Image();
+        modal3.appendChild(modalImg3);
+
+        image3.addEventListener('click', function () {
+            modalImg3.src = this.src;
+            modal3.style.display = 'block';
+        });
+
+        modal3.addEventListener('click', function (event) {
+            if (event.target === this) {
+                modal3.style.display = 'none';
+            }
+        });
+
+
+        
+        const image4 = document.querySelector('#bottomright img');
+
+        const modal4 = document.createElement('div');
+        modal4.classList.add('modal');
+        document.body.appendChild(modal4);
+
+        const modalImg4 = new Image();
+        modal4.appendChild(modalImg4);
+
+        image4.addEventListener('click', function () {
+            modalImg4.src = this.src;
+            modal4.style.display = 'block';
+        });
+
+        modal4.addEventListener('click', function (event) {
+            if (event.target === this) {
+                modal4.style.display = 'none';
+            }
+        });
+
+
+
+    </script>
+</body>
+
+</html>
